@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Repositories\Interfaces;
+
+interface EmpleadoInterface
+{
+    public function getAllEmpleados();
+
+    public function getEmpleadoById($id);
+
+    public function createEmpleado(array $data);
+
+    public function updateEmpleado($id, array $data);
+
+    public function deleteEmpleado($id);
+}
