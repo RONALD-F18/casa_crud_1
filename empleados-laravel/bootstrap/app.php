@@ -12,8 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // API sin autenticación: solo SubstituteBindings (evita 401 en Postman/CodeSpaces)
     })
+    
     ->withExceptions(function (Exceptions $exceptions): void {
         //
     })->create();

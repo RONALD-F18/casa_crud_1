@@ -15,12 +15,4 @@ class RepositoryServicesProvider extends ServiceProvider
     {
         $this->app->bind(EmpleadoInterface::class, EmpleadoRepository::class);
     }
-
-    /**
-     * Bootstrap services.
-     */
-    public function boot(): void
-    {
-        //
-    }
 }
